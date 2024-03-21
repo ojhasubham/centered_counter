@@ -18,6 +18,11 @@ main {
 .controls {
 	top: 2rem;
 	left: 2rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	width: 12rem;
+	position: relative;
 }
 
 .control {
@@ -45,6 +50,12 @@ main {
 	border-radius: .4rem;
 	border: 2px solid green;
 	box-shadow: 1px 1px 4px 2px #557668;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .count_button:active {
