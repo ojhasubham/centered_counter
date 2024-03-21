@@ -1,4 +1,3 @@
-
 import { expect, test } from "vitest";
 import { factory } from "./factory";
 
@@ -37,14 +36,14 @@ test("handles floating-point step values", function () {
   expect(count()).toBe(1.5);
 });
 
-test('decrements count correctly with negative step', function () {
+test("decrements count correctly with negative step", function () {
   const count = factory(20, -5);
   count();
   expect(count()).toBe(15);
   expect(count()).toBe(10);
 });
 
-test('increment count correctly with negative start', function () {
+test("increment count correctly with negative start", function () {
   const count = factory(-10, 5);
   count();
   expect(count()).toBe(-5);
